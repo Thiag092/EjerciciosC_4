@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <string.h>
+
+void ingresarDatos();
+void procesarDatos(char);
+void imprimirDatos();
+
+char nombre [20];
+char apellido[20];
+char nombreCompleto[20];
+
+
+int main (){
+	IngresarDatos();
+	procesarDatos(nombre, apellido);
+	imprimirDatos();
+	return 0;
+}
+
+void ingresarDatos(){
+	printf ("Ingrese nombre: \n");
+	scanf ("%s", &nombre);
+	
+	printf ("Ingrese apellido: \n");
+	scanf ("%s", &apellido);
+}
+
+void procesarDatos(pNombre, pApellido){
+	strcat(pNombre, pApellido) = nombreCompleto;
+	
+}
+void imprimirDatos(){
+	printf ("El nombre Ingreasdo es: %s", nombreCompleto);
+}

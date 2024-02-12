@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+typedef struct {
+	int dni
+	float sueldo
+	int edad
+}tr_empleado;
+
+	void iniciarProceso();
+	void grabarEmpleado();
+	void ingresarDatos();
+	void finalizarProceso();
+	
+tr_empleado empleado;
+FILE* vf_nominaEmpleados;
+
+int main {
+	iniciarProceso();
+	grabarEmpleado();
+	ingresarDatos();
+	finalizarProceso();
+	
+	return 0;
+}
+void iniciarProceso(){
+	vf_nominaEmpleados= fopen("nomina.dat", "wb");
+	printf ("Archivo creado!");
+}
+void grabarEmpleado(){
+	char continuacion = 0;
+	while (continuacion !='n'){
+		ingresarDatos();
+		
+		
+	}
+}
